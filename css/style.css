@@ -61,7 +61,8 @@ li a {
   min-height: 300px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 80px;
   padding-right: 16px;
   padding-left: 16px;
 }
@@ -78,6 +79,8 @@ li a {
 }
 
 .hero-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
   width: 50%;
   float: left;
   font-family: Arial, Helvetica, sans-serif;
@@ -110,7 +113,7 @@ img {
 }
 
 .full-width-div {
-  min-height: 200px;
+  min-height: 300px;
   width: 100%;
   margin: 0;
   background-color: #662244;
@@ -125,17 +128,17 @@ img {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.h1 {
-  padding-top: 90px;
-  padding-bottom: 30px;
+h1 {
+  padding-top: 40px;
+  padding-bottom: 0px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 60px;
   font-weight: 400;
-  line-height: 70px;
+  line-height: 60px;
+  color: black;
 }
 
-.h2 {
-  padding-bottom: 30px;
+h2 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 28px;
   font-weight: 400;
@@ -143,8 +146,7 @@ img {
   color: #662344;
 }
 
-.h3 {
-  padding-bottom: 10px;
+h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -152,29 +154,28 @@ img {
   color: rgb(113, 113, 113);
 }
 
-.h4 {
-  padding-bottom: 10px;
+h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 300;
   line-height: 20px;
   color: #fff;
 }
 
-.p {
-  padding-bottom: 30px;
+p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 100;
   line-height: 28px;
+  color: black;
 }
 
 .p-regular {
-  padding-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 100;
   line-height: 22px;
+  color: black;
 }
 
 .button {
