@@ -13,7 +13,8 @@ div {
 /* nav bar rules */
 
 .nav {
-  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
   min-height: 60px;
   margin-right: auto;
   margin-left: auto;
@@ -25,7 +26,8 @@ div {
 }
 
 .logo {
-  float: left;
+  display: flex;
+  flex-direction: column;
   padding-top: 14px;
   padding-bottom: 14px;
   align-items: center;
@@ -33,6 +35,23 @@ div {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
+}
+
+.nav-bar-right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+#hamburger-menu {
+  display: flex;
+  font-size: 22px;
 }
 
 ul {
@@ -51,6 +70,8 @@ li a {
   text-align: center;
   text-decoration: none;
   padding: 14px 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
 }
 
 
@@ -160,7 +181,7 @@ p {
 /* button rules */
 
 .button {
-  width: 200px;
+  width: 100px;
   background-color: #662244;
   border: none;
   color: white;
@@ -221,21 +242,23 @@ p {
       display: none;
     }
 
+  
     /* font rules */
     h1 {
-      font-family: Georgia, 'Times New Roman', Times, serif;
       font-size: 30px;
-      font-weight: 400;
       line-height: 40px;
-      color: black;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+    
+    h3 {
+      font-size: 18px;
     }
 
     h4 {
-      font-family: Georgia, 'Times New Roman', Times, serif;
       font-size: 20px;
-      font-weight: 300;
-      line-height: 40px;
-      color: #fff;
     }
 
     /* grid rules */
@@ -291,7 +314,10 @@ p {
     .nav-bar-right {
       display: none;
     }
-    
+  
+    #hamburger-menu {
+      display: flex;
+    }
 }
 
 @media (min-width: 768px)
@@ -337,6 +363,12 @@ p {
       padding: 20px 0px;
     }
 
+    /* font rules */
+    h1 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
     /* grid rules */
     .row {
       display: flex;
@@ -363,7 +395,7 @@ p {
       display: flex;
       flex-direction: column;
       align-content: center;
-      width: 33%;
+      width: 30%;
     }
 
     .footer-page {
@@ -374,6 +406,14 @@ p {
       min-height: 400px;
       padding: 0px 40px;
     }
+
+    .nav-bar-right {
+      display: none;
+    }
+
+    #hamburger-menu {
+      display: flex;
+    }
 }
 
 @media (min-width: 992px)
@@ -382,12 +422,6 @@ p {
 
     .nav-bar-right {
       display: flex;
-      align-items: center;
-      float: right;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 30px;
     }
 
     #hamburger-menu {
@@ -400,7 +434,7 @@ p {
       margin: 0;
       background-color: #662244;
       margin-bottom: 200px;
-      padding: 60px 0px;
+      padding: 40px 0px;
     }
 
     /* hero section rules */
@@ -469,10 +503,6 @@ p {
       width: 20%;
     }
 
-    .hamburger-menu {
-      display: none;
-    }
-
     .footer-page {
       display: flex;
       justify-content: center;
@@ -481,4 +511,22 @@ p {
       min-height: 400px;
       padding: 0px 60px;
     }
+
+    h1 {
+      font-size: 60px;
+      line-height: 60px;
+    }
+    
+    h2 {
+      font-size: 28px;
+    }
+    
+    h3 {
+      font-size: 20px;
+    }
+    
+    h4 {
+      font-size: 28px;
+    }
+    
 }
