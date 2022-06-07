@@ -81,6 +81,7 @@ li a {
 .content-page {
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
   flex-direction: column;
   max-width: 1200px;
   min-height: 400px;
@@ -92,14 +93,19 @@ li a {
   padding-left: 16px;
 }
 
-
-
 /* row and column rules */
 
 .row-1, .footer-row {
   display: flex;
   align-items: center;
 }
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
 
 .page-break-text {
   padding: 72px;
@@ -153,6 +159,21 @@ h4 {
   color: #fff;
 }
 
+h5 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: black;
+  margin: 28px 0px 8px 0px;
+}
+
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  color: rgb(113, 113, 113);
+  margin: auto;
+}
+
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -177,6 +198,13 @@ p {
   color: white;
 }
 
+.card-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: auto;
+  color: black;
+}
 
 /* button rules */
 
@@ -193,6 +221,7 @@ p {
   border-radius: 5px;
   line-height: 12px;
   font-weight: 300;
+  cursor: pointer;
 }
 
 .secondary-button {
@@ -210,7 +239,87 @@ p {
   border-radius: 5px;
   line-height: 12px;
   font-weight: 300;
+  cursor: pointer;
 }
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0px;
+}
+
+.filter-button {
+  text-decoration: none;
+  border: none;
+  background-color: #ffffff;
+  color: #999999;
+  font-size: 16px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.filter-button:active, .filter-button:hover {
+  text-decoration: underline;
+  border: none;
+  background-color: #ffffff;
+  color: #662244;
+  font-size: 16px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+/* card rules */
+.card-page {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  min-height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.card {
+  min-width: 260px;
+  box-shadow: 0 0px 12px 0 rgba(131, 131, 131, 0.2);
+  transition: 0.3s;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  width: 22%;
+  padding-bottom: 20px;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 0px 20px 0 rgba(33, 33, 33, 0.2);
+  cursor: pointer;
+}
+
+.card-container {
+  padding: 2px 16px;
+}
+
+/* search rules */
+input[type=text] {
+  width: 800px;
+  margin: 40px 0px;
+  padding: 16px 20px;
+  background-color: #efefef;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
 
 
 @media (min-width: 480px)
@@ -242,6 +351,13 @@ p {
       display: none;
     }
 
+    #banner-img {
+      width: 100%;
+      background-image: url(../img/luca-bravo-SRjZtxsK3Os-unsplash.jpg);
+      height: 250px;
+      background-position: center;
+      background-size: cover;
+    }
   
     /* font rules */
     h1 {
@@ -259,6 +375,17 @@ p {
 
     h4 {
       font-size: 20px;
+    }
+
+    /* search rules */
+      input[type=text] {
+      max-width: 300px;
+      margin: 20px 0px;
+      padding: 16px 16px;
+      background-color: #efefef;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
     }
 
     /* grid rules */
@@ -354,6 +481,14 @@ p {
       width: 50%;
     }
 
+    #banner-img {
+      width: 100%;
+      background-image: url(../img/luca-bravo-SRjZtxsK3Os-unsplash.jpg);
+      height: 300px;
+      background-position: center;
+      background-size: cover;
+    }
+
     .full-width-div {
       min-height: 150px;
       width: 100%;
@@ -367,6 +502,17 @@ p {
     h1 {
       font-size: 40px;
       line-height: 40px;
+    }
+
+    /* search rules */
+    input[type=text] {
+      max-width: 500px;
+      margin: 20px 0px;
+      padding: 16px 16px;
+      background-color: #efefef;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
     }
 
     /* grid rules */
@@ -388,7 +534,8 @@ p {
       display: flex;
       flex-direction: column;
       align-content: center;
-      width: 50%;
+      width: 48%;
+      margin-right: 10px;
     }
 
     .column-4 {
@@ -467,6 +614,25 @@ p {
       width: 50%;
     }
 
+    #banner-img {
+      width: 100%;
+      background-image: url(../img/luca-bravo-SRjZtxsK3Os-unsplash.jpg);
+      height: 405px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    /* search rules */
+    input[type=text] {
+      max-width: 800px;
+      margin: 20px 0px;
+      padding: 16px 16px;
+      background-color: #efefef;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+    }
+
     /* grid rules */
     .row {
       display: flex;
@@ -486,7 +652,8 @@ p {
       display: flex;
       flex-direction: column;
       align-content: center;
-      width: 50%;
+      width: 48%;
+      margin-right: 10px;
     }
 
     .column-4 {

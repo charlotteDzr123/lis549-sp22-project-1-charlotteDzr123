@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Charlotte Deng">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="a website that helps organizations to recruit research interviewees">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Duck Interview</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">Duck Interview</div>
+            <div id="hamburger-menu"><a href="#"><i class="fa fa-bars" aria-label="menu" style="color: black;"></i></a></li></div>
+            <div class="nav-bar-right">
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="#">Interview Square</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div style="text-align: center;">
+            <h1>
+                Interview Square
+            </h1>
+            <h2>
+                Start exploring the interview questions and finish interview to earn rewards!
+            </h2>
+        </div>
+        <div style="text-align: center;">
+            <input type="text" placeholder="Search..">
+        </div>
+        <div class="btn-group" role="group">
+            <button onclick="filterObjects('all')" class="filter-button">All</button>
+            <button onclick="filterObjects('one-on-one')" class="filter-button">One-on-one</button>
+            <button onclick="filterObjects('behavioral-interview')" class="filter-button">Behavioral Interview</button>
+            <button onclick="filterObjects('group-interview')" class="filter-button">Group Interview</button>
+            <button onclick="filterObjects('card-sorting')" class="filter-button">Card Sorting</button>
+            <button onclick="filterObjects('phone-interview')" class="filter-button">Phone Interview</button>
+          </div>
+        <div class="card-page">
+            <div class="card-row">
+                <div class="card phone-interview">
+                    <div class="card-container">
+                        <h5>Phone/Skype Interview</h1>
+                        <h6>Groupon</h2>
+                        <p class="card-text">We would love to hire a group of people to conduct a one-on-one interview to test the usability of our new launched product...</p>
+                    </div>
+                </div>
+                <div class="card group-interview">
+                    <div class="card-container">
+                        <h5>Group Interview</h1>
+                        <h6>Spinfluence</h2>
+                        <p class="card-text">Small businesses often work on small budgets, yet hope to maximize the results of their spending. Interviewers may ask you thi...</p>
+                    </div>
+                </div>
+                <div class="card behavioral-interview">
+                    <div class="card-container">
+                        <h5>Behavioral Interviews</h1>
+                        <h6>Securiteam</h2>
+                        <p class="card-text">We would love to hire a group of people to conduct a one-on-one interview to test the usability of our new launched product...</p>
+                    </div>
+                </div>
+                <div class="card one-on-one">
+                    <div class="card-container">
+                        <h5>One-on-one interview</h1>
+                        <h6>Intellivision</h2>
+                        <p class="card-text">In your answer, explain how you'd accomplish a project that had little funding, employing...</p>
+                    </div>
+                </div>
+                <div class="card card-sorting">
+                    <div class="card-container">
+                        <h5>Card Sorting Exercise</h1>
+                        <h6>Omnilert</h2>
+                        <p class="card-text">Because managers make some of the most critical business decisions, hiring managers want to know exactly how you...</p>
+                    </div>
+                </div>
+                <div class="card group-interview">
+                    <div class="card-container">
+                        <h5>Group Interview</h1>
+                        <h6>Omnilert</h2>
+                        <p class="card-text">Group interviews are a great way to test and select the best candidates for positions which require great communication, interpersonal and stress management skills...</p>
+                    </div>
+                </div>
+                <div class="card one-on-one">
+                    <div class="card-container">
+                        <h5>One-on-one interview</h1>
+                        <h6>Securiteam</h2>
+                        <p class="card-text">We want to know why hiring you will benefit their company. Tout your achievements at previous jobs and...</p>
+                    </div>
+                </div>
+                <div class="card behavioral-interview">
+                    <div class="card-container">
+                        <h5>Behavioral Interviews</h1>
+                        <h6>Securiteam</h2>
+                        <p class="card-text">We want to know why hiring you will benefit their company. Tout your achievements at previous jobs and...</p>
+                    </div>
+                </div>
+                <div class="card card-sorting">
+                    <div class="card-container">
+                        <h5>Card Sorting</h1>
+                        <h6>Puzzle Huddle</h2>
+                        <p class="card-text">In your answer, explain how you'd accomplish a project that had little funding, employing..</p>
+                    </div>
+                </div>
+                <div class="card phone-interview">
+                    <div class="card-container">
+                        <h5>Phone/Skype Interview</h1>
+                        <h6>Puzzle Huddle</h2>
+                        <p class="card-text">We want to know why hiring you will benefit their company. Tout your achievements at previous jobs and...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="full-width-div">
+            <div class="footer-page">
+                <div class="footer-row">
+                    <h4>
+                        Ready for better interviews?
+                    </h4>
+                </div>
+                <div class="footer-row" style="padding-bottom: 20px;">
+                    <div class="column-2">
+                        <p class="p-white">Our Company</p>
+                        <p class="p-white">Blog</p>
+                        <p class="p-white">Podcast</p>
+                        <p class="p-white">Support</p>
+                    </div>
+                    <div class="column-2">
+                        <p class="p-white">Recruit</p>
+                        <p class="p-white">Pricing</p>
+                        <p class="p-white">Career</p>
+                        <p class="p-white">Partner</p>
+                    </div>
+                    <div class="column-2">
+                        <p class="p-white">Focus Group Studies</p>
+                        <p class="p-white">Diart Studies</p>
+                        <p class="p-white">Interview Studies</p>
+                        <p class="p-white">User Testing & Study</p>
+                    </div>
+                </div>
+                <div class="footer-row" style="border-top:#d5d5d5 solid 1px;">
+                    <p class="p-white">
+                        Images and illustrations can be found in <cite>Hireguide</cite>, <cite>Unsplash</cite> and <cite>Undraw</cite>.
+                    </p>
+                </div>
+                <div class="footer-row">
+                    <p class="p-white";>
+                    &copy; Charlotte Deng 2022
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- include script files here! -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+     <script src="js/index.js"></script>
+
+</body>
+</html>
